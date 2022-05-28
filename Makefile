@@ -22,7 +22,7 @@ add:
 	cd mesh-portal       && git add .
 	cd wasm-membrane     && git add .
 	cd mechtron          && git add .
-	git push
+	git add .
 
 
 commit:
