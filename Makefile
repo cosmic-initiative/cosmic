@@ -10,14 +10,12 @@ clone:
 	git clone git@github.com:mechtronium/wasm-membrane.git
 	git clone git@github.com:mechtronium/mechtron.git
 
-
 status:
 	cd starlane      && git status
 	cd mesh-portal   && git status
 	cd wasm-membrane && git status
 	cd mechtron      && git status
 	git status
-
 
 pull:
 	cd starlane && git pull
@@ -32,7 +30,6 @@ add:
 	cd wasm-membrane     && git add .
 	cd mechtron          && git add .
 	git add .
-
 
 commit:
 	cd starlane          && git commit -a -m "$(m)" || true
