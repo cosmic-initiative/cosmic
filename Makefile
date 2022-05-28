@@ -10,6 +10,15 @@ clone:
 	git clone git@github.com:mechtronium/wasm-membrane.git
 	git clone git@github.com:mechtronium/mechtron.git
 
+
+status:
+	cd starlane      && git status
+	cd mesh-portal   && git status
+	cd wasm-membrane && git status
+	cd mechtron      && git status
+	git status
+
+
 pull:
 	cd starlane && git pull
 	cd mesh-portal && git pull
