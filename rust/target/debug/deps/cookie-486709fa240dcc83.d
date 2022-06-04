@@ -1,0 +1,13 @@
+/Users/scott/cosmic/rust/target/debug/deps/cookie-486709fa240dcc83.rmeta: /Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/lib.rs /Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/builder.rs /Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/parse.rs /Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/jar.rs /Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/delta.rs /Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/draft.rs /Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/expiration.rs
+
+/Users/scott/cosmic/rust/target/debug/deps/libcookie-486709fa240dcc83.rlib: /Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/lib.rs /Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/builder.rs /Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/parse.rs /Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/jar.rs /Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/delta.rs /Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/draft.rs /Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/expiration.rs
+
+/Users/scott/cosmic/rust/target/debug/deps/cookie-486709fa240dcc83.d: /Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/lib.rs /Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/builder.rs /Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/parse.rs /Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/jar.rs /Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/delta.rs /Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/draft.rs /Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/expiration.rs
+
+/Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/lib.rs:
+/Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/builder.rs:
+/Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/parse.rs:
+/Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/jar.rs:
+/Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/delta.rs:
+/Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/draft.rs:
+/Users/scott/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.16.0/src/expiration.rs:

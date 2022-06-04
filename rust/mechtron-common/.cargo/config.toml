@@ -1,0 +1,8 @@
+paths=[ "../../../mesh-portal/rust/mesh-portal",
+        "../../../mesh-portal/rust/mesh-portal-versions",
+        "../../../mesh-portal/rust/mesh-portal-api-server",
+        "../../../mesh-portal/rust/mesh-portal-tcp-server",
+        "../../../mesh-portal/rust/mesh-portal-api-client",
+        "../../../mesh-portal/rust/mesh-portal-tcp-client",
+        "../../../mesh-portal/rust/mesh-portal-tcp-common",
+ ]

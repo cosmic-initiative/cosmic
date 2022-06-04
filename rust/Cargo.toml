@@ -1,0 +1,17 @@
+[workspace]
+
+members = [
+  "starlane",
+  "starlane-core",
+  "mesh-portal",
+  "mesh-portal-versions",
+  "mesh-portal-api-client",
+  "mesh-portal-api-server",
+  "mesh-portal-tcp-common",
+  "mesh-portal-tcp-client",
+  "mesh-portal-tcp-server",
+  "cosmic-nom",
+  "cosmic-macros",
+  "cosmic-portal-cli",
+  "cosmic-portal-cli-exe",
+  ]
