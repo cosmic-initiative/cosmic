@@ -78,8 +78,8 @@ scatter:
 	mv rust/cosmic-portal-cli     mesh-portal/rust
 	mv rust/mesh-artifact-api     mesh-portal/rust
 	mv rust/cosmic-portal-cli-exe mesh-portal/rust
-	mv rust/wasm-membrane/rust/wasm-membrane-host  wasm-membrane/rust
-	mv rust/mechtron/rust/mechtron-common          mechtron/rust
+	mv rust/wasm-membrane-host  wasm-membrane/rust
+	mv rust/mechtron-common          mechtron/rust
 
 
 
