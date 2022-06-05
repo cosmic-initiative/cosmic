@@ -1,1 +1,0 @@
-/Users/scott/projects/mechtron/rust/mechtron-common/target/package/mechtron-common-0.2.0-rc1/target/debug/libmechtron_common.rlib: /Users/scott/projects/mechtron/rust/mechtron-common/target/package/mechtron-common-0.2.0-rc1/src/lib.rs

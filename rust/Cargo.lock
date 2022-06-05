@@ -681,6 +681,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "cosmic-macros-primitive"
+version = "0.1.0"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "cosmic-nom"
 version = "0.1.0"
 dependencies = [
@@ -2311,6 +2320,7 @@ dependencies = [
  "async-trait",
  "bincode",
  "chrono",
+ "cosmic-macros-primitive",
  "cosmic-nom",
  "http",
  "http-serde",
@@ -3930,6 +3940,7 @@ dependencies = [
  "chrono",
  "clap",
  "cosmic-nom",
+ "cosmic-portal-cli",
  "ctrlc",
  "dashmap",
  "error-chain",

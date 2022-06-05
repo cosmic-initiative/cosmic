@@ -12,6 +12,7 @@ members = [
   "mesh-portal-tcp-server",
   "cosmic-nom",
   "cosmic-macros",
+  "cosmic-macros-primitive",
   "cosmic-portal-cli",
   "cosmic-portal-cli-exe",
   ]

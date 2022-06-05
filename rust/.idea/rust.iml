@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/cosmic-macros-primitive/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cosmic-macros/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cosmic-nom/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cosmic-portal-cli-exe/src" isTestSource="false" />
