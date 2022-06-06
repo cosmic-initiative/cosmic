@@ -2250,6 +2250,7 @@ dependencies = [
  "async-trait",
  "dashmap",
  "mesh-portal",
+ "mesh-portal-versions",
  "thiserror",
  "tokio",
  "uuid",
@@ -2322,6 +2323,7 @@ dependencies = [
  "chrono",
  "cosmic-macros-primitive",
  "cosmic-nom",
+ "dashmap",
  "http",
  "http-serde",
  "lazy_static",
@@ -2332,8 +2334,10 @@ dependencies = [
  "semver 0.11.0",
  "serde",
  "serde_json",
+ "serde_urlencoded",
  "strum",
  "strum_macros",
+ "tokio",
 ]
 
 [[package]]
