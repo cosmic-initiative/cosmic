@@ -3945,6 +3945,7 @@ dependencies = [
  "clap",
  "cosmic-nom",
  "cosmic-portal-cli",
+ "cosmic-portal-cli-exe",
  "ctrlc",
  "dashmap",
  "error-chain",
