@@ -2248,7 +2248,10 @@ version = "0.2.0-rc1"
 dependencies = [
  "anyhow",
  "async-trait",
+ "cosmic-macros",
+ "cosmic-macros-primitive",
  "dashmap",
+ "lazy_static",
  "mesh-portal",
  "mesh-portal-versions",
  "thiserror",
