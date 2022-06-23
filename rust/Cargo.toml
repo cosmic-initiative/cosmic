@@ -15,4 +15,5 @@ members = [
   "cosmic-macros-primitive",
   "cosmic-portal-cli",
   "cosmic-portal-cli-exe",
+  "cosmic-lanes"
   ]

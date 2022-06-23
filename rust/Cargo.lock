@@ -662,6 +662,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5827cebf4670468b8772dd191856768aedcb1b0278a04f989f7766351917b9dc"
 
 [[package]]
+name = "cosmic-lanes"
+version = "0.1.0"
+dependencies = [
+ "async-trait",
+ "dashmap 5.3.4",
+ "futures",
+ "mesh-portal-versions",
+ "tokio",
+]
+
+[[package]]
 name = "cosmic-macros"
 version = "0.1.0"
 dependencies = [
@@ -994,6 +1005,18 @@ checksum = "e77a43b28d0668df09411cb0bc9a8c2adc40f9a048afe863e05fd43251e8e39c"
 dependencies = [
  "cfg-if 1.0.0",
  "num_cpus",
+]
+
+[[package]]
+name = "dashmap"
+version = "5.3.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3495912c9c1ccf2e18976439f4443f3fee0fd61f424ff99fde6a66b15ecb448f"
+dependencies = [
+ "cfg-if 1.0.0",
+ "hashbrown 0.12.1",
+ "lock_api",
+ "parking_lot_core 0.9.3",
 ]
 
 [[package]]
@@ -1953,7 +1976,7 @@ version = "0.57.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f8358421de932e06d0521700fc8ecfc7058c95509e0770d2da88be78cd737c07"
 dependencies = [
- "dashmap",
+ "dashmap 4.0.2",
  "derivative",
  "futures",
  "k8s-openapi",
@@ -2250,7 +2273,7 @@ dependencies = [
  "async-trait",
  "cosmic-macros",
  "cosmic-macros-primitive",
- "dashmap",
+ "dashmap 4.0.2",
  "lazy_static",
  "mesh-portal",
  "mesh-portal-versions",
@@ -2265,7 +2288,7 @@ version = "0.2.0-rc1"
 dependencies = [
  "anyhow",
  "async-trait",
- "dashmap",
+ "dashmap 4.0.2",
  "futures",
  "mesh-portal",
  "mesh-portal-versions",
@@ -2280,7 +2303,7 @@ version = "0.2.0-rc1"
 dependencies = [
  "anyhow",
  "async-trait",
- "dashmap",
+ "dashmap 4.0.2",
  "mesh-portal",
  "mesh-portal-api-client",
  "mesh-portal-tcp-common",
@@ -2326,7 +2349,7 @@ dependencies = [
  "chrono",
  "cosmic-macros-primitive",
  "cosmic-nom",
- "dashmap",
+ "dashmap 4.0.2",
  "http",
  "http-serde",
  "lazy_static",
@@ -3950,7 +3973,7 @@ dependencies = [
  "cosmic-portal-cli",
  "cosmic-portal-cli-exe",
  "ctrlc",
- "dashmap",
+ "dashmap 4.0.2",
  "error-chain",
  "futures",
  "handlebars",
