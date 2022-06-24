@@ -22,6 +22,7 @@
       <sourceFolder url="file://$MODULE_DIR$/starlane/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/wasm-membrane-host/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cosmic-lanes/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/cosmic-lanes-quic/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/mechtron-common/target" />
       <excludeFolder url="file://$MODULE_DIR$/wasm-membrane-host/target" />

@@ -60,6 +60,7 @@ gather:
 	mv $(PWD)/mesh-portal/rust/cosmic-nom               rust || true
 	mv $(PWD)/mesh-portal/rust/cosmic-portal-cli        rust || true
 	mv $(PWD)/mesh-portal/rust/cosmic-lanes             rust || true
+	mv $(PWD)/mesh-portal/rust/cosmic-lanes-quic        rust || true
 	mv $(PWD)/mesh-portal/rust/mesh-artifact-api        rust || true
 	mv $(PWD)/mesh-portal/rust/cosmic-portal-cli-exe    rust || true
 	mv $(PWD)/wasm-membrane/rust/wasm-membrane-host     rust || true
@@ -80,6 +81,7 @@ scatter:
 	mv rust/cosmic-macros-primitive         mesh-portal/rust || true
 	mv rust/cosmic-portal-cli               mesh-portal/rust || true
 	mv rust/cosmic-lanes                    mesh-portal/rust || true
+	mv rust/cosmic-lanes-quic               mesh-portal/rust || true
 	mv rust/mesh-artifact-api               mesh-portal/rust || true
 	mv rust/cosmic-portal-cli-exe           mesh-portal/rust || true
 	mv rust/wasm-membrane-host              wasm-membrane/rust || true
