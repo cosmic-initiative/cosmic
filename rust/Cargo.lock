@@ -2321,48 +2321,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "mesh-portal-tcp-client"
-version = "0.2.0-rc1"
-dependencies = [
- "anyhow",
- "async-trait",
- "dashmap 4.0.2",
- "mesh-portal",
- "mesh-portal-api-client",
- "mesh-portal-tcp-common",
- "tokio",
-]
-
-[[package]]
-name = "mesh-portal-tcp-common"
-version = "0.2.0-rc1"
-dependencies = [
- "anyhow",
- "async-trait",
- "bincode",
- "mesh-portal",
- "serde",
- "tokio",
-]
-
-[[package]]
-name = "mesh-portal-tcp-server"
-version = "0.2.0-rc1"
-dependencies = [
- "anyhow",
- "async-trait",
- "bincode",
- "mesh-portal",
- "mesh-portal-api-server",
- "mesh-portal-tcp-common",
- "serde",
- "strum",
- "strum_macros",
- "tokio",
- "uuid",
-]
-
-[[package]]
 name = "mesh-portal-versions"
 version = "0.2.0-rc1"
 dependencies = [
@@ -4090,8 +4048,6 @@ dependencies = [
  "lazy_static",
  "mesh-portal",
  "mesh-portal-api-client",
- "mesh-portal-tcp-client",
- "mesh-portal-tcp-common",
  "mesh-portal-versions",
  "reqwest",
  "serde",
@@ -4121,6 +4077,7 @@ dependencies = [
  "bytes 1.1.0",
  "chrono",
  "clap",
+ "cosmic-macros",
  "cosmic-nom",
  "cosmic-portal-cli",
  "cosmic-portal-cli-exe",
@@ -4146,9 +4103,6 @@ dependencies = [
  "mesh-portal",
  "mesh-portal-api-client",
  "mesh-portal-api-server",
- "mesh-portal-tcp-client",
- "mesh-portal-tcp-common",
- "mesh-portal-tcp-server",
  "mesh-portal-versions",
  "mysql",
  "nom",

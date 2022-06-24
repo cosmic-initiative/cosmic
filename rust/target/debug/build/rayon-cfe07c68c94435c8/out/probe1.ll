@@ -1,5 +1,5 @@
-; ModuleID = 'probe1.a14ce355-cgu.0'
-source_filename = "probe1.a14ce355-cgu.0"
+; ModuleID = 'probe1.ffd1bf90-cgu.0'
+source_filename = "probe1.ffd1bf90-cgu.0"
 target datalayout = "e-m:o-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.7.0"
 
@@ -9,20 +9,20 @@ target triple = "x86_64-apple-macosx10.7.0"
 %"unwind::libunwind::_Unwind_Exception" = type { i64, void (i32, %"unwind::libunwind::_Unwind_Exception"*)*, [6 x i64] }
 %"unwind::libunwind::_Unwind_Context" = type { [0 x i8] }
 
-@alloc20 = private unnamed_addr constant <{ [27 x i8] }> <{ [27 x i8] c"assertion failed: step != 0" }>, align 1
-@alloc21 = private unnamed_addr constant <{ [89 x i8] }> <{ [89 x i8] c"/rustc/52ca603da73ae9eaddf96f77953b33ad8c47cc8e/library/core/src/iter/adapters/step_by.rs" }>, align 1
-@alloc22 = private unnamed_addr constant <{ i8*, [16 x i8] }> <{ i8* getelementptr inbounds (<{ [89 x i8] }>, <{ [89 x i8] }>* @alloc21, i32 0, i32 0, i32 0), [16 x i8] c"Y\00\00\00\00\00\00\00\15\00\00\00\09\00\00\00" }>, align 8
+@alloc22 = private unnamed_addr constant <{ [27 x i8] }> <{ [27 x i8] c"assertion failed: step != 0" }>, align 1
+@alloc23 = private unnamed_addr constant <{ [89 x i8] }> <{ [89 x i8] c"/rustc/10f4ce324baf7cfb7ce2b2096662b82b79204944/library/core/src/iter/adapters/step_by.rs" }>, align 1
+@alloc24 = private unnamed_addr constant <{ i8*, [16 x i8] }> <{ i8* getelementptr inbounds (<{ [89 x i8] }>, <{ [89 x i8] }>* @alloc23, i32 0, i32 0, i32 0), [16 x i8] c"Y\00\00\00\00\00\00\00\15\00\00\00\09\00\00\00" }>, align 8
 
 ; core::iter::traits::iterator::Iterator::rev
 ; Function Attrs: inlinehint uwtable
-define void @_ZN4core4iter6traits8iterator8Iterator3rev17hd9986ecf89f9e3d9E(%"core::iter::adapters::rev::Rev<core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>>"* sret(%"core::iter::adapters::rev::Rev<core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>>") %0, %"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>"* %self) unnamed_addr #0 {
+define void @_ZN4core4iter6traits8iterator8Iterator3rev17h464a77adfb491b10E(%"core::iter::adapters::rev::Rev<core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>>"* sret(%"core::iter::adapters::rev::Rev<core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>>") %0, %"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>"* %self) unnamed_addr #0 {
 start:
   %_2 = alloca %"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>", align 8
   %1 = bitcast %"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>"* %_2 to i8*
   %2 = bitcast %"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>"* %self to i8*
   call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 8 %1, i8* align 8 %2, i64 24, i1 false)
 ; call core::iter::adapters::rev::Rev<T>::new
-  call void @"_ZN4core4iter8adapters3rev12Rev$LT$T$GT$3new17h97f408460c01964bE"(%"core::iter::adapters::rev::Rev<core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>>"* sret(%"core::iter::adapters::rev::Rev<core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>>") %0, %"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>"* %_2)
+  call void @"_ZN4core4iter8adapters3rev12Rev$LT$T$GT$3new17h9eda92af0e0e1410E"(%"core::iter::adapters::rev::Rev<core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>>"* sret(%"core::iter::adapters::rev::Rev<core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>>") %0, %"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>"* %_2)
   br label %bb1
 
 bb1:                                              ; preds = %start
@@ -31,10 +31,10 @@ bb1:                                              ; preds = %start
 
 ; core::iter::traits::iterator::Iterator::step_by
 ; Function Attrs: inlinehint uwtable
-define void @_ZN4core4iter6traits8iterator8Iterator7step_by17hcab8e4dd686c0edcE(%"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>"* sret(%"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>") %0, i32 %self.0, i32 %self.1, i64 %step) unnamed_addr #0 {
+define void @_ZN4core4iter6traits8iterator8Iterator7step_by17h18a88ead1de1ccf1E(%"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>"* sret(%"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>") %0, i32 %self.0, i32 %self.1, i64 %step) unnamed_addr #0 {
 start:
 ; call core::iter::adapters::step_by::StepBy<I>::new
-  call void @"_ZN4core4iter8adapters7step_by15StepBy$LT$I$GT$3new17hbbdd947e97d24f0bE"(%"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>"* sret(%"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>") %0, i32 %self.0, i32 %self.1, i64 %step)
+  call void @"_ZN4core4iter8adapters7step_by15StepBy$LT$I$GT$3new17h686bf501a1e2b611E"(%"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>"* sret(%"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>") %0, i32 %self.0, i32 %self.1, i64 %step)
   br label %bb1
 
 bb1:                                              ; preds = %start
@@ -43,7 +43,7 @@ bb1:                                              ; preds = %start
 
 ; core::iter::adapters::rev::Rev<T>::new
 ; Function Attrs: uwtable
-define void @"_ZN4core4iter8adapters3rev12Rev$LT$T$GT$3new17h97f408460c01964bE"(%"core::iter::adapters::rev::Rev<core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>>"* sret(%"core::iter::adapters::rev::Rev<core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>>") %0, %"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>"* %iter) unnamed_addr #1 {
+define void @"_ZN4core4iter8adapters3rev12Rev$LT$T$GT$3new17h9eda92af0e0e1410E"(%"core::iter::adapters::rev::Rev<core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>>"* sret(%"core::iter::adapters::rev::Rev<core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>>") %0, %"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>"* %iter) unnamed_addr #1 {
 start:
   %_2 = alloca %"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>", align 8
   %1 = bitcast %"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>"* %_2 to i8*
@@ -58,7 +58,7 @@ start:
 
 ; core::iter::adapters::step_by::StepBy<I>::new
 ; Function Attrs: uwtable
-define void @"_ZN4core4iter8adapters7step_by15StepBy$LT$I$GT$3new17hbbdd947e97d24f0bE"(%"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>"* sret(%"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>") %0, i32 %iter.0, i32 %iter.1, i64 %step) unnamed_addr #1 personality i32 (i32, i32, i64, %"unwind::libunwind::_Unwind_Exception"*, %"unwind::libunwind::_Unwind_Context"*)* @rust_eh_personality {
+define void @"_ZN4core4iter8adapters7step_by15StepBy$LT$I$GT$3new17h686bf501a1e2b611E"(%"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>"* sret(%"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>") %0, i32 %iter.0, i32 %iter.1, i64 %step) unnamed_addr #1 personality i32 (i32, i32, i64, %"unwind::libunwind::_Unwind_Exception"*, %"unwind::libunwind::_Unwind_Context"*)* @rust_eh_personality {
 start:
   %1 = alloca { i8*, i32 }, align 8
   %_4 = icmp ne i64 %step, 0
@@ -66,21 +66,21 @@ start:
   br i1 %_3, label %bb1, label %bb2
 
 bb2:                                              ; preds = %start
-  %_7 = sub i64 %step, 1
+  %_8 = sub i64 %step, 1
   %2 = getelementptr inbounds %"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>", %"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>"* %0, i32 0, i32 1
   %3 = getelementptr inbounds { i32, i32 }, { i32, i32 }* %2, i32 0, i32 0
   store i32 %iter.0, i32* %3, align 8
   %4 = getelementptr inbounds { i32, i32 }, { i32, i32 }* %2, i32 0, i32 1
   store i32 %iter.1, i32* %4, align 4
   %5 = bitcast %"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>"* %0 to i64*
-  store i64 %_7, i64* %5, align 8
+  store i64 %_8, i64* %5, align 8
   %6 = getelementptr inbounds %"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>", %"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>"* %0, i32 0, i32 2
   store i8 1, i8* %6, align 8
   ret void
 
 bb1:                                              ; preds = %start
 ; invoke core::panicking::panic
-  invoke void @_ZN4core9panicking5panic17hcfbd21ac0836f966E([0 x i8]* align 1 bitcast (<{ [27 x i8] }>* @alloc20 to [0 x i8]*), i64 27, %"core::panic::location::Location"* align 8 bitcast (<{ i8*, [16 x i8] }>* @alloc22 to %"core::panic::location::Location"*)) #4
+  invoke void @_ZN4core9panicking5panic17h15f5d8f77f3a9c9eE([0 x i8]* align 1 bitcast (<{ [27 x i8] }>* @alloc22 to [0 x i8]*), i64 27, %"core::panic::location::Location"* align 8 bitcast (<{ i8*, [16 x i8] }>* @alloc24 to %"core::panic::location::Location"*)) #4
           to label %unreachable unwind label %cleanup
 
 bb3:                                              ; preds = %cleanup
@@ -112,7 +112,7 @@ bb4:                                              ; preds = %bb3
 
 ; probe1::probe
 ; Function Attrs: uwtable
-define void @_ZN6probe15probe17h3b780b7d441cbf56E() unnamed_addr #1 {
+define void @_ZN6probe15probe17h9066eb229e3b1ae2E() unnamed_addr #1 {
 start:
   %_3 = alloca { i32, i32 }, align 4
   %_2 = alloca %"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>", align 8
@@ -126,12 +126,12 @@ start:
   %4 = getelementptr inbounds { i32, i32 }, { i32, i32 }* %_3, i32 0, i32 1
   %5 = load i32, i32* %4, align 4
 ; call core::iter::traits::iterator::Iterator::step_by
-  call void @_ZN4core4iter6traits8iterator8Iterator7step_by17hcab8e4dd686c0edcE(%"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>"* sret(%"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>") %_2, i32 %3, i32 %5, i64 2)
+  call void @_ZN4core4iter6traits8iterator8Iterator7step_by17h18a88ead1de1ccf1E(%"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>"* sret(%"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>") %_2, i32 %3, i32 %5, i64 2)
   br label %bb1
 
 bb1:                                              ; preds = %start
 ; call core::iter::traits::iterator::Iterator::rev
-  call void @_ZN4core4iter6traits8iterator8Iterator3rev17hd9986ecf89f9e3d9E(%"core::iter::adapters::rev::Rev<core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>>"* sret(%"core::iter::adapters::rev::Rev<core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>>") %_1, %"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>"* %_2)
+  call void @_ZN4core4iter6traits8iterator8Iterator3rev17h464a77adfb491b10E(%"core::iter::adapters::rev::Rev<core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>>"* sret(%"core::iter::adapters::rev::Rev<core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>>") %_1, %"core::iter::adapters::step_by::StepBy<core::ops::range::Range<i32>>"* %_2)
   br label %bb2
 
 bb2:                                              ; preds = %bb1
@@ -146,7 +146,7 @@ declare i32 @rust_eh_personality(i32, i32, i64, %"unwind::libunwind::_Unwind_Exc
 
 ; core::panicking::panic
 ; Function Attrs: cold noinline noreturn uwtable
-declare void @_ZN4core9panicking5panic17hcfbd21ac0836f966E([0 x i8]* align 1, i64, %"core::panic::location::Location"* align 8) unnamed_addr #3
+declare void @_ZN4core9panicking5panic17h15f5d8f77f3a9c9eE([0 x i8]* align 1, i64, %"core::panic::location::Location"* align 8) unnamed_addr #3
 
 attributes #0 = { inlinehint uwtable "frame-pointer"="all" "probe-stack"="__rust_probestack" "target-cpu"="core2" }
 attributes #1 = { uwtable "frame-pointer"="all" "probe-stack"="__rust_probestack" "target-cpu"="core2" }

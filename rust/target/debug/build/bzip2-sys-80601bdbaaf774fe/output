@@ -42,10 +42,10 @@ exit status: 0
 running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "bzip2-1.0.8" "-D_FILE_OFFSET_BITS=64" "-DBZ_NO_STDIO" "-o" "/Users/scott/cosmic/rust/target/debug/build/bzip2-sys-80601bdbaaf774fe/out/lib/bzip2-1.0.8/randtable.o" "-c" "bzip2-1.0.8/randtable.c"
 exit status: 0
 running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "bzip2-1.0.8" "-D_FILE_OFFSET_BITS=64" "-DBZ_NO_STDIO" "-o" "/Users/scott/cosmic/rust/target/debug/build/bzip2-sys-80601bdbaaf774fe/out/lib/bzip2-1.0.8/compress.o" "-c" "bzip2-1.0.8/compress.c"
+exit status: 0
 running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "bzip2-1.0.8" "-D_FILE_OFFSET_BITS=64" "-DBZ_NO_STDIO" "-o" "/Users/scott/cosmic/rust/target/debug/build/bzip2-sys-80601bdbaaf774fe/out/lib/bzip2-1.0.8/decompress.o" "-c" "bzip2-1.0.8/decompress.c"
+exit status: 0
 running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "bzip2-1.0.8" "-D_FILE_OFFSET_BITS=64" "-DBZ_NO_STDIO" "-o" "/Users/scott/cosmic/rust/target/debug/build/bzip2-sys-80601bdbaaf774fe/out/lib/bzip2-1.0.8/bzlib.o" "-c" "bzip2-1.0.8/bzlib.c"
-exit status: 0
-exit status: 0
 exit status: 0
 AR_x86_64-apple-darwin = None
 AR_x86_64_apple_darwin = None

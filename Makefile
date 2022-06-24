@@ -52,9 +52,6 @@ gather:
 	mv $(PWD)/mesh-portal/rust/mesh-portal-versions     rust || true
 	mv $(PWD)/mesh-portal/rust/mesh-portal-api-client   rust || true
 	mv $(PWD)/mesh-portal/rust/mesh-portal-api-server   rust || true
-	mv $(PWD)/mesh-portal/rust/mesh-portal-tcp-common   rust || true
-	mv $(PWD)/mesh-portal/rust/mesh-portal-tcp-client   rust || true
-	mv $(PWD)/mesh-portal/rust/mesh-portal-tcp-server   rust || true
 	mv $(PWD)/mesh-portal/rust/cosmic-macros            rust || true
 	mv $(PWD)/mesh-portal/rust/cosmic-macros-primitive  rust || true
 	mv $(PWD)/mesh-portal/rust/cosmic-nom               rust || true
@@ -73,9 +70,6 @@ scatter:
 	mv rust/mesh-portal-versions            mesh-portal/rust || true
 	mv rust/mesh-portal-api-client          mesh-portal/rust || true
 	mv rust/mesh-portal-api-server          mesh-portal/rust || true
-	mv rust/mesh-portal-tcp-common          mesh-portal/rust || true
-	mv rust/mesh-portal-tcp-client          mesh-portal/rust || true
-	mv rust/mesh-portal-tcp-server          mesh-portal/rust || true
 	mv rust/cosmic-nom                      mesh-portal/rust || true
 	mv rust/cosmic-macros                   mesh-portal/rust || true
 	mv rust/cosmic-macros-primitive         mesh-portal/rust || true
