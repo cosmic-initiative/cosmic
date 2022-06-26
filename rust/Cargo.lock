@@ -687,6 +687,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "cosmic-locality"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "cosmic-lanes",
+ "cosmic-macros",
+ "dashmap 4.0.2",
+ "mesh-portal-versions",
+ "serde",
+ "tokio",
+]
+
+[[package]]
 name = "cosmic-macros"
 version = "0.1.0"
 dependencies = [
@@ -4077,6 +4090,7 @@ dependencies = [
  "bytes 1.1.0",
  "chrono",
  "clap",
+ "cosmic-locality",
  "cosmic-macros",
  "cosmic-nom",
  "cosmic-portal-cli",

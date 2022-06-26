@@ -13,5 +13,6 @@ members = [
   "cosmic-portal-cli",
   "cosmic-portal-cli-exe",
   "cosmic-lanes",
-  "cosmic-lanes-quic"
+  "cosmic-lanes-quic",
+  "cosmic-locality"
   ]
