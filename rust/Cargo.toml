@@ -5,14 +5,12 @@ members = [
   "starlane-core",
   "mesh-portal",
   "mesh-portal-versions",
-  "mesh-portal-api-client",
-  "mesh-portal-api-server",
   "cosmic-nom",
   "cosmic-macros",
   "cosmic-macros-primitive",
   "cosmic-portal-cli",
-  "cosmic-portal-cli-exe",
   "cosmic-lanes",
   "cosmic-lanes-quic",
-  "cosmic-locality"
+  "cosmic-locality",
+  "cosmic-core"
   ]

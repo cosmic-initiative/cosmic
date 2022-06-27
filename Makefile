@@ -50,8 +50,6 @@ gather:
 	mv $(PWD)/starlane/rust/starlane-core               rust || true
 	mv $(PWD)/mesh-portal/rust/mesh-portal              rust || true
 	mv $(PWD)/mesh-portal/rust/mesh-portal-versions     rust || true
-	mv $(PWD)/mesh-portal/rust/mesh-portal-api-client   rust || true
-	mv $(PWD)/mesh-portal/rust/mesh-portal-api-server   rust || true
 	mv $(PWD)/mesh-portal/rust/cosmic-macros            rust || true
 	mv $(PWD)/mesh-portal/rust/cosmic-macros-primitive  rust || true
 	mv $(PWD)/mesh-portal/rust/cosmic-nom               rust || true
@@ -60,7 +58,7 @@ gather:
 	mv $(PWD)/mesh-portal/rust/cosmic-lanes-quic        rust || true
 	mv $(PWD)/mesh-portal/rust/cosmic-locality          rust || true
 	mv $(PWD)/mesh-portal/rust/mesh-artifact-api        rust || true
-	mv $(PWD)/mesh-portal/rust/cosmic-portal-cli-exe    rust || true
+	mv $(PWD)/mesh-portal/rust/cosmic-core              rust || true
 	mv $(PWD)/wasm-membrane/rust/wasm-membrane-host     rust || true
 	mv $(PWD)/mechtron/rust/mechtron-common             rust || true
 
@@ -69,17 +67,15 @@ scatter:
 	mv rust/starlane-core                   starlane/rust    || true
 	mv rust/mesh-portal                     mesh-portal/rust || true
 	mv rust/mesh-portal-versions            mesh-portal/rust || true
-	mv rust/mesh-portal-api-client          mesh-portal/rust || true
-	mv rust/mesh-portal-api-server          mesh-portal/rust || true
 	mv rust/cosmic-nom                      mesh-portal/rust || true
 	mv rust/cosmic-macros                   mesh-portal/rust || true
 	mv rust/cosmic-macros-primitive         mesh-portal/rust || true
 	mv rust/cosmic-portal-cli               mesh-portal/rust || true
 	mv rust/cosmic-lanes                    mesh-portal/rust || true
+	mv rust/cosmic-core                     mesh-portal/rust || true
 	mv rust/cosmic-lanes-quic               mesh-portal/rust || true
 	mv rust/cosmic-locality                 mesh-portal/rust || true
 	mv rust/mesh-artifact-api               mesh-portal/rust || true
-	mv rust/cosmic-portal-cli-exe           mesh-portal/rust || true
 	mv rust/wasm-membrane-host              wasm-membrane/rust || true
 	mv rust/mechtron-common                 mechtron/rust    || true
 

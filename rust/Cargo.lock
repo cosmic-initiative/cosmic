@@ -662,6 +662,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5827cebf4670468b8772dd191856768aedcb1b0278a04f989f7766351917b9dc"
 
 [[package]]
+name = "cosmic-core"
+version = "0.1.0"
+
+[[package]]
 name = "cosmic-lanes"
 version = "0.1.0"
 dependencies = [
@@ -691,11 +695,13 @@ name = "cosmic-locality"
 version = "0.1.0"
 dependencies = [
  "anyhow",
+ "async-trait",
  "cosmic-lanes",
  "cosmic-macros",
  "dashmap 4.0.2",
  "lazy_static",
  "mesh-portal-versions",
+ "regex 1.5.6",
  "serde",
  "tokio",
 ]
@@ -747,19 +753,6 @@ dependencies = [
  "mesh-portal",
  "mesh-portal-versions",
  "serde",
-]
-
-[[package]]
-name = "cosmic-portal-cli-exe"
-version = "0.1.0"
-dependencies = [
- "async-trait",
- "cosmic-macros",
- "cosmic-nom",
- "lazy_static",
- "mesh-portal",
- "mesh-portal-versions",
- "tokio",
 ]
 
 [[package]]
@@ -1543,10 +1536,8 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9be70c98951c83b8d2f8f60d7065fa6d5146873094452a1008da8c2f1e4205ad"
 dependencies = [
  "cfg-if 1.0.0",
- "js-sys",
  "libc",
  "wasi 0.10.0+wasi-snapshot-preview1",
- "wasm-bindgen",
 ]
 
 [[package]]
@@ -2314,38 +2305,6 @@ dependencies = [
  "serde",
  "strum",
  "strum_macros",
-]
-
-[[package]]
-name = "mesh-portal-api-client"
-version = "0.2.0-rc1"
-dependencies = [
- "anyhow",
- "async-trait",
- "cosmic-macros",
- "cosmic-macros-primitive",
- "dashmap 4.0.2",
- "lazy_static",
- "mesh-portal",
- "mesh-portal-versions",
- "thiserror",
- "tokio",
- "uuid",
-]
-
-[[package]]
-name = "mesh-portal-api-server"
-version = "0.2.0-rc1"
-dependencies = [
- "anyhow",
- "async-trait",
- "dashmap 4.0.2",
- "futures",
- "mesh-portal",
- "mesh-portal-versions",
- "strum_macros",
- "tokio",
- "uuid",
 ]
 
 [[package]]
@@ -4087,7 +4046,6 @@ dependencies = [
  "dirs 3.0.2",
  "lazy_static",
  "mesh-portal",
- "mesh-portal-api-client",
  "mesh-portal-versions",
  "reqwest",
  "serde",
@@ -4121,7 +4079,6 @@ dependencies = [
  "cosmic-macros",
  "cosmic-nom",
  "cosmic-portal-cli",
- "cosmic-portal-cli-exe",
  "ctrlc",
  "dashmap 4.0.2",
  "error-chain",
@@ -4142,8 +4099,6 @@ dependencies = [
  "mechtron-common",
  "mesh-artifact-api",
  "mesh-portal",
- "mesh-portal-api-client",
- "mesh-portal-api-server",
  "mesh-portal-versions",
  "mysql",
  "nom",
