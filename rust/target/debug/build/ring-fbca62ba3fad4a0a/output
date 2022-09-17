@@ -1,3 +1,0 @@
-cargo:rustc-link-lib=static=ring-core
-cargo:rustc-link-lib=static=ring-test
-cargo:rustc-link-search=native=/Users/scott/cosmic/rust/target/debug/build/ring-fbca62ba3fad4a0a/out
