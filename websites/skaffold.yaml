@@ -6,8 +6,9 @@ build:
 
   artifacts:
   - image: docker.io/starlane/docs
-    context: docs
-
+    context: starlane.io
+  - image: docker.io/starlane/thecosmicinitiative
+    context: thecosmicinitiative.io
 
 
 deploy:
@@ -20,5 +21,8 @@ deploy:
       chartPath: charts/docs 
       values:
         starlane: docker.io/starlane/docs
+        thecosmicinitiative: docker.io/starlane/thecosmicinitiative
+
+
 
 
