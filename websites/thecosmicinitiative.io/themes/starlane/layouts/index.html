@@ -45,32 +45,156 @@
 </section>
 
 <section id="content">
-  <h3>WHAT IS IT?</h3>
-  <p>A free and open source software framework written in Rust that facilitates deployment &amp; execution of WebAssembly <em>(Wasm)</em> components at every level of the enterprise (Mobile, Browser, Desktop, Server, Edge, IoT.) Cosmic enabled Wasm components can discover other Wasm components &amp; resources &amp; interoperate via messages &amp; remote procedure calls (RPC)</p>
-  <h3>WEBASSEMBLY (Wasm)</h3>
-  <p><a href="https://webassembly.org/">A binary instruction format for a virtual machine</a>.</p>  
-  <p>Wasm is Fast, Safe, Portable &amp; Ubiquitous.  It has a far smaller footprint than containers (think kilobytes instead of gigabytes) and can execute in more environments than containers including the Browser, Mobile and IoT.</p>   
-  <p>The Cosmic Initiative is just a set of Rust libraries to make WebAssembly shine by allowing developers to compose a software program or add on to an existing software program a framework to orhcestrate multiple Wasm components.</p>
-  <h3>COSMIC FEATURES</h3>
-  <ul>
-  <li><h4>ARTIFACTS</h4><p>Artifact system for bundling and deploying resource files, assets and Wasm binaries</p></li>
-  <li><h4>MESSAGING</h4><p>A simple messaging protocol for discovering and communicating via RPC between various Wasm components.</p>  
-                        <p>The Cosmic Initiative even provides a working registry and routing system for getting messages where they need to go in many environments</p></li>
-  <li><h4>CONFIGURATION</h4><p>A configuration DSL for creating binding rules between the Wasm and its greater 'cosmic' environment.</p>  
-                            <p>The binding contract ensures that the environment has everything the Wasm requires and provides an RPC interface for the Wasm</p></li>
-  <li><h4>SECURITY</h4><p>A security model which governs between Wasm components.</p> 
-                       <p>This is perhaps one of the most exciting aspects of The Cosmic Initiative: built on top of the revolutionary security of Wasm and buttressed by cosmic's chosen host engine <a href="https://wasmer.io/">Wasmer</a> it should be possible for the first time to execute completely untrusted code securely when the right policy is configured with reasonable confidence--a bold claim</p></li>
+  <h3 id="faqtitle">FREQUENTLY ASKED QUESTIONS</h3>
 
-  </ul>
+  <p>The following is a dialog between the developer and a compilation of actual Frequently Asked Questions posted to this website.</p>  
+  <p>I have found the dialog model the best way to help people gain a quick understanding of The Cosmic Initiative. Enjoy!</p>
 
-  <h2 id="starlane">STARLANE</h2>
-  <p>Check out the cosmic initiative reference implementation <a href="http://starlane.io/"><strong>Starlane</strong>: <strong>A Mesh for extending enterprise resources with WebAssembly</strong></a></p>
+  <p class="faq"><strong>FAQ</strong>: Hi, I clicked this link by accident. Just curious What is 'WebAssembly Orchestra Anyway?`</p>
+
+  <p><strong>uberscott</strong>: WebAssembly <em>Orchestration.</em> It's a Software Framework for deploying &amp; executing WebAssembly everywhere!</p>
+
+  <p class="faq"><strong>FAQ</strong>: Software!? I thought this was a new science fiction show!</p>
+
+  <p><strong>uberscott</strong>: Nope, just an open source and free software project with an Astro Physics based theme.</p>
+
+  <p class="faq"><strong>FAQ</strong>: No need to tell me it's free. I wasn't going to give you money.</p>
+
+  <p><strong>uberscott</strong>: With this Framework WebAssembly components can discover their environment and communicate with other resources including WebAssembly that talks to WebAssembly through messaging and RPC!</p> 
+                                <p>BTW, the kids these days sometimes refer to WebAssembly as <em>Wasm</em> and I want to be cool so I will be using the terms interchangeably from here on.</p>
+
+  <p class="faq"><strong>FAQ</strong>: This is getting out of hand!  Now you're calling it Wasm instead of WebAssembly! The Children! What about the Children!? This Wasm creation of yours must be terminated forthwith!
+  
+  <p><strong>uberscott</strong>: I didn't invent WebAssembly.  Wasm is a standard created by the <a href="https://www.w3.org/">World Wide Web Consortium (WC3)</a>. Wasm is a binary instruction format for a virtual machine. It's a widely accepted standard that already
+                                 works on all the major browsers and is rapidly gaining acceptance on every other layer of the stack including Mobile, Desktop, Server, Edge and IoT. Check out <a href="https://webassembly.org">webassembly.org</a></p><p>There are MANY advantages that Wasm has over containers and other virtual machines including an extremely small footprint, security and ubiquity.  
+                    WebAssembly is the future and The Cosmic Initiative is just here to accelerate Wasm's inevitable ascension.</p>
+
+  <p class="faq"><strong>FAQ</strong>: Well the WC3 website looks much more trustworthy that yours. I may have jumped the gun and called the cops on you--probably better not mention that you are into Wasm or they might give you a good baton beating.</p>
+
+  <p><strong>uberscott</strong>: Everyone wants Wasm on every layer of the stack and that is what The Cosmic Initiative is here to facilitate: the deployment, configuration, execution, and interoperability of these Wasm components across every Layer of the stack! To boil it down to one word we just call this Orchestration.  The Framework is written in Rust so it can be compiled and run anywhere! ... OUCH!</p>
+
+  <p class="FAQ"><strong>FAQ</strong>: Sorry! Didn't mean to hit you. That's an involuntary tick I have with my right punching arm when someone says he or she is a Rust developer.</p>
+
+  <p><strong>uberscott</strong>: A lot of people seem to have that tick... Anyway the framework also allows these Wasm components to interact with other resources like File Systems and Databases and really any Resource in the enterprise that has a Cosmic Initiative driver implementation.</p>
+
+  <p class="faq"><strong>FAQ</strong>: Good God man! You have turned my beloved Wasm into a monster! Tell me you have put safeguards in place to prevent these Wasms from becoming sentient and overthrowing us! Don't Make me invoke the children a second time!</p>
 
 
-  <h2>THE CODE</h2>
+  <p><strong>uberscott</strong>: WebAssembly is itself very secure because it only allows host method invocation to white listed methods AND this framework is built upon the <a href="https://wasmer.io">Wasmer</a> host which 
+                is itself super cool and secure!  Interactions between Wasm components occur via The Cosmic Fabric--which has many responsibilities including routing messages and managing a registry to locate component addresses--
+                The Cosmic Fabric also enforces security.</p>
+
+
+  <p class="faq"><strong>FAQ</strong>: This will never work because even though the illuminati is trying to make everyone say the made up word <em>`DevOps`</em> we all know deep down
+                                       that the Dev folk like to deliver naughty code to Ops just for meanness because they can't forgive the Ops folk for not allowing them fully descend into a mad 
+                                       fantasy that hardware and service configuration doesn't exist and the world is only software.</p>
+
+  <p>There are some feuds that this humble open source project doesn't pretend to be capable of solving. Yet there is some mitigation:  
+
+                                 <p>All concepts in the framework exist in one of two "dimensions": The <em>Universe</em> or The <em>Hyperverse</em>.</p>
+
+
+
+<p>Wasm components experience the Cosmic Fabric through the Universal API which allows the component to interact with it as if was on a single infinitely vast computer with no security.</a> 
+
+  <p class="faq"><strong>FAQ</strong>: So it's NOT secure!  A Pox! A Pox upon you sir! The Children! Thricely thou hast made me invoketh the children!</p>
+
+<p><strong>uberscott</strong>: Security is still enforced.  The Universal code simply doesn't need to be aware of security.</p><p>For example let's talk authorization: If a source Wasm component sends a message to a target Wasm component and the target
+   Wasm component requires authorization--the source Wasm simply sends the message without credentials or tokens or anything... It behaves as if there IS no security.
+   Behind the scenes as the message traverses the Cosmic Fabric it enters the Hyperversal dimension and the source's authorization is checked and the message is 
+   either passed to the target or rejected to the source.</p><p>Note that the target component which is also part
+   of the Universal dimension makes no effort to authorize the request--it simply assumes that any message it receives must be authorized or else it would not have been delivered.</p><p>Of course, the
+   two dimensional isolation of concerns will collide in the case when the source Wasm component does NOT have permission to message the target Wasm component. For this reason the Universe is not
+   completely unaware of the Hyperverse, but at least there is a vast simplification on the code on both end.</p><p>As you can see it's really about moving the common and oft duplicated complexities
+   away from the multitude of component endpoints to a single place in between the components.</p>
+   
+  <p class="faq"><strong>FAQ</strong>: That last part was long and reading it has made my eyes hurt.</p>
+
+
+
+<p><strong>uberscott</strong>: There are many other examples of complexities besides security that are managed by the Hyperversal dimension
+ such as provisioning, sharding and load balancing to name a few.</p>
+
+  <p class="faq"><strong>FAQ</strong>: Hey! I just realized something!  The word Framework can be broken down into two words: "Frame" and "Work"... And, well, I guess I got no problem with "Frame", but "Work"! That's that thing that I hate!</p>
+
+
+<p><strong>uberscott</strong>: You might be interested in the reference implementation of the framework in development called <a href="http://starlane.io"><span id="starlane">STARLANE</span>: <strong>A Mesh for extending enterprise resources with WebAssembly</strong></a>.</p>
+
+
+  <p class="faq"><strong>FAQ</strong>: Oh so The Cosmic Initiative is just a framework for making Meshes... Why didn't you say that in the first place?</p>  <p class="faq">I have a You Tube video I wanted to visit of a nice lady forcing a smelly monkey to take a bath and the monkey is doing everting he can to get away because he wants to play... It has 2M likes and looks funny.</p><p class="faq">I could have been enriching myself with wholesome entertainment of monkey suffering this whole time instead of listening to your open source drivel if you had just said it was a Mesh from the start!</p>
+
+
+
+
+<p><strong>uberscott</strong>: The Cosmic Initiative is a framework for Orchestrating WebAssembly components and one application of the framework is a Mesh.  I have plans for a 2nd reference implementation which is a stand
+                               alone application for mobile devices that makes use of the deployment capabilities so small parts of the overall application can be changed as needed.</p>
+
+
+  <p class="faq"><strong>FAQ</strong>: I see. I still kinda wish I had watched the monkey vid.</p>
+
+  <p><strong>uberscott</strong>: More importantly The Cosmic Initiative is a collection of Rust packages for composing WebAssembly Orchestration apps which means there is code for messaging, artifacting, configuration and more.
+                                 I'm excited by the prospect that other developers may use these packages to create new applications that even I didn't imagine.</p>
+
+  <p class="faq"><strong>FAQ</strong>: Yeah, I'm not really a big Rust fan since I don't like being nagged by a compiler telling me I don't own something I used in the very previous line...</p>
+
+  <p><strong>uberscott</strong>: Wasm is polyglot so you can compile Wasm binaries from most of the major languages.  The Cosmic Initiative will provide auto generated serde models of all the important Universal concepts to
+                                 the most widely used programming languages.</p>
+                                 <p>Also, aside from extending the Cosmos with Wasm components you can also create a Control component to exposes a traditional API endpoint from external services. 
+                                 The Control endpoints also enable you to add Wasm to your existing architecture gradually without throwing out the entire enterprise and starting over.... You simply add a 
+                                 Control client API library to an existing service and start sending messages to Wasm components that live inside the Cosmos.</p>
+                                 <p>The rational for using Rust for the framework is that Rust is super fast, super robust and has a small footprint. 
+                                 Of course all languages make trade offs in order to shine at something--in the case of Rust its fantastic benefits are achieved by a compiler that sucks the very sanity out of the developer producing
+                                 a binary and the empty husk of a coder as byproduct.</p>
+ 
+  <p class="faq"><strong>FAQ</strong>: What's this!  I'm looking at this <span id="starlane">STARLANE</span> website of yours and it's trying to push some sort of <span id="starlane">STARLANE ENTERPRISE</span> thingy on me... I thought this stuff was free!</p>
+
+  <p><strong>uberscott</strong>: The community edition is free and has all the same features of the enterprise edition.</p><p>The enterprise edition offers support &amp; greatly enhanced scalability.</p>
+     <p>Our policy: <em>&quot;The Enterprise Edition is for people who can afford it. Unsupported licenses are free to contributors, noble organizations (charities,etc) 
+        and anyone who can't afford it but needs it if they ask nicely.&quot;</em></p>
+
+  <p class="faq"><strong>FAQ</strong>: AND free for big people that threaten you with bodily harm, right?</p>
+
+  <p><strong>uberscott</strong>: Gulp! ... Yes ... So it's for 1) people who can afford it, 2) contributors 3) noble organizations 4) people who ask nicely 5) people who threaten me and look to have the means to carry out those threats.</p>
+
+  <p class="faq"><strong>FAQ</strong>: And Capybaras?</p>
+
+
+  <p><strong>uberscott</strong>: Pardon me?</p>
+
+
+  <p class="faq"><strong>FAQ</strong>: You know! The largest rodents species in the world: <a href="https://www.nationalgeographic.com/animals/mammals/facts/cabybara-facts">THE CAPYBARA!</a></p>
+
+
+  <p><strong>uberscott</strong>: Why not. So its for 1) Rich people who pay 2) contributors 3) noble people 4) nice people 5) unethical people who I'm afraid of and 5) excessively giant rodents</p>
+
+
+  <p class="faq"><strong>FAQ</strong>: Sounds good.</p>
+
+ 
+  <p><strong>uberscott</strong>: Thanks. We all know you could have kept that going.</p><p>Anyway, You should now understand enough about The Cosmic Initiative to make an informed decision as to if you
+                                 want to learn more or slink off into the oblivion of the internet to pursue You Tube's rich bounty of amusing monkey bath time videos and you should make the
+                                 best choice for yourself to further enrich your life. I hope you will dig deeper into the project, learn how to work with <span id="starlane">STARLANE</span> 
+                                 and give me feedback either harsh critique or encouraging praise to help me shape what i think is an important contribution that will one day send Wasm to its full potential!</p>
+                                 <p>Also, you are actually the most sane person I have spoken too in a while so please consider <a href="/contact/">contacting me</a> and perhaps one day becoming a contributor</p>
+                                 <p>I am sure we we will have GREAT fun!</p>
+
+  <h2>WHERE TO GO FROM HERE</h2> 
+
+ <h3 id="starlane">STARLANE</h3>
   <p>
-  Check it out on <a href="https://github.com/cosmic-initiative/cosmic-initiative/tree/develop/rust/cosmic">github</a>
+  Here's the 50th link to <a href="http://starlane.io">Starlane</a> where this FAQ dialog continues and trails into documentation and tutorials showing how to administer Starlane and create and deploy Wasm components and all sorts of additional goodies.
   </p>
+
+
+   <h3>THE CODE</h3>
+  <p>
+  Feel free to root around the code, critique it, fork it, fix it and PLEASE be sure to drop a star for the repo if you like it or like its potential: <a href="https://github.com/cosmic-initiative/cosmic-initiative/tree/develop/rust/cosmic">github repo</a>
+  </p>
+
+   <h3>CONTACT</h3>
+  <p>
+   <a href="/contact/">Contact Me</a>.  Really... Just say introduce yourself and tell me what you think of my project.  I've been working on The Cosmic Initiative by myself for 2 years and I'm overdue for a human intervention.
+ </p>
 
 
 </section>
