@@ -14,3 +14,7 @@ Mechtron(version=1.0.0) {
 
 }
 ```
+
+## NEXT
+[Bind Routes & Pipelines]({{< ref "/docs/bind-routes" >}} "Bind Routes & Pipelines")
+

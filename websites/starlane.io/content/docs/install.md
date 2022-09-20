@@ -46,3 +46,6 @@ App(1.0.0) {
 ```
 
 There's a lot going on there, but you can see that some important mechtrons are being created which are part of composing this application at install time.
+
+## NEXT
+[Mechtrons & Apps]({{< ref "/docs/mechtrons-and-apps" >}} "Mechtrons & Apps")

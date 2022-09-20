@@ -22,3 +22,8 @@ The Hyperversal Dimension is the infrastructure view of the Cosmos which is resp
 * * **Driver** - Particles are supported through Drivers.  Each Particle Kind has exactly one Driver
 * **Registry** The Registry holds important information on where Particles live and security rules
 * **Machine** - Although Stars are the 'node' component for managing Particles--the stars are more of 'virtual nodes' that live inside a Machine. The Machine will connect the internal Lanes between Stars, provide a service Stars within other Machines to connect & the Machine manages clients on behalf of its stars that are required to connect to other external Stars.   This architecture facilitates the rearrangement of infrastructure without the Stars needing any special knowledge of the Hyperverse cluster that it resides in.  For example in the standalone configuration ALL of the Stars execute on one Machine, and in yet another configuration each Star may have it's own Machine but in both cases the Stars see the Hyperverse the same without needing any special knowledge of how the Hyperverse cluster is composed.
+
+
+
+## NEXT
+[Particles Pointers & Kinds]({{< ref "/docs/particles-pointers-and-kinds" >}} "Particles Pointers & Kinds")

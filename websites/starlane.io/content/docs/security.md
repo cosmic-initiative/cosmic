@@ -98,6 +98,8 @@ grant super on my-domain.com:app:+** to my-domain.com:app<App>
 above the App can now administer itself and its children with full access.
 
 
+## NEXT
+[Docs]({{< ref "/docs/docs" >}} "Docs")
 
 
 

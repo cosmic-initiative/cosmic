@@ -53,6 +53,9 @@ And of course you can chain them together into one monster create statement:
 create my-domain.com:app<App>{ +config=my-domain.com:repo:company-app:1.0.0:/config/my-app.config }( company-name="ACME" )[ users=my-domain.com:users ] 
 ```
 
+## NEXT
+[Get, Set & Delete]({{< ref "/docs/get-set-delete" >}} "Get, Set & Delete")
+
 
 
 

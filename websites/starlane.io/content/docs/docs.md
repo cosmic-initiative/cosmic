@@ -1,4 +1,6 @@
-# BIND & CONFIG
+# CONFIGURATION DOCS
+
+Starlane features a rich DSL called `Arrow Notation` for configuration Docs.  
 
 Docs Bind & Config have very similar content and are therefore documented together: 
 
@@ -116,6 +118,8 @@ App(version=1.0.0) {
 
 The above example is interesting because the App can be provided with a UserBase (in the case where you may want to share the UserBase with several apps) but if not present it will create its own UserBase.
 
+## NEXT
+[Install]({{< ref "/docs/install" >}} "Install")
 
 
 

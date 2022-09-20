@@ -54,3 +54,5 @@ The above will delete recursively, but you can also delete selectively:
 ```
 delete my-domain.com:app:**<Mechtron>
 ```
+
+[Security]({{< ref "/docs/security" >}} "Security")
