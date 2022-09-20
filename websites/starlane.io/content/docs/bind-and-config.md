@@ -29,6 +29,16 @@ Parent points can also be referenced using `..`:
 ..:another-app
 ```
 
+### BUILTIN VARS
+There are also some builtin Variables that can be used in a Document for example `bundle`:
+
+```
+${bundle}:/bind/special.bind
+```
+
+Above the `${bundle}` var references the Artifact bundle that the document came from, this can be useful when you want to group related documents together in a release.
+
+
 ### DOCUMENT DECL
 The first part of a Doc is that it's Kind and Version must be declared:
 
@@ -38,12 +48,12 @@ Bind(version=1.0.0) { }
 
 This tells the Doc parser what is being parsed and what version it must be translated from
 
-### Arg\<Var>
-The `Arg<Var>` Selector tells the Bind & Config which Arguments are expected to be passed to the Particle at creation time:
+### Arg
+The `Arg` Scope tells the Bind & Config which Arguments are expected to be passed to the Particle at creation time:
 
 ```
 Bind(version=1.0.0) {
-  Arg<Var> {
+  Arg {
     # ensure company-name is set and is a <Text>
     company-name<Text>; 
     
@@ -60,29 +70,28 @@ And an example of a Config which can actually set vars:
 
 ```
 App(version=1.0.0) {
-  Arg<Var> {
+  Arg {
     num-employees<Int> = 100;
   }
 }
 ```
 
-### Env\<Var>
+### Env
 Like Arg we can also ensure that environment variables are set.  Environment variables are inherited from the parent.
 
 ```
 Bind(version=1.0.0) {
-  Env<Var> {
+  Env {
     slogan<Text> !! "everyone needs a slogan!"
   }
 }
 ```
 
-### Env\<Particle>
 Environment Particles can also be required and set if needed:
 
 ```
 Bind(version=1.0.0) {
-  Env<Particle> {
+  Env {
     # require that App has been set by a parent
     app<App>; 
     
@@ -95,7 +104,7 @@ And the config for App:
 
 ```
 App(version=1.0.0) {
-  Env<Particle> {
+  Env {
     # here the App is setting the environment variable app to itself so that the children of the app will have a reference to it
     app<App> = .;
     
