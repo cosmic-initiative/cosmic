@@ -4,6 +4,7 @@ date: 2022-02-12T21:29:26-06:00
 draft: false
 ---
 
+>***NOTE***: This tutorial is for Starlane version 0.2.0.  The Docs on the rest of this site reference version 0.3.0 which does not have a Starlane release yet.
 
 # TUTORIAL
 

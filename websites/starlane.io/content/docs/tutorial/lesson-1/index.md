@@ -16,7 +16,7 @@ The source code for this lesson can be found on github here:
 Open a terminal and start serving a Starlane instance:
 
 ```bash
-Starlane serve
+starlane serve
 ```
 
 Open a browser window and point it to `http://localhost:8080/index.html` --  you should see a STARLANE 404 page which is expected since we haven't configured anything yet.
@@ -25,12 +25,12 @@ Open a browser window and point it to `http://localhost:8080/index.html` --  you
 Next we are going to use the Starlane command line to issue a command to create the 'localhost' space.  A **Space** in Starlane is both the top of the address hierarchy used for Starlane's messaging AND the host or domain name.  Since we are running locally we will create a `localhost` space.
 
 ```bash
-Starlane exec "create localhost<Space>"
+starlane exec "create localhost<Space>"
 ```
 
 Let's break the last command down before we move on:
 
-First when we want to send a command to Starlane we use the subcommand `Starlane exec` and then we put the actual command in quotes.      
+First when we want to send a command to Starlane we use the subcommand `starlane exec` and then we put the actual command in quotes.      
 
 ``` 
        Space address
@@ -44,7 +44,7 @@ Here we issue the `create` command to create a new resource.  The resource's add
 We can see that if the space was created successfully by running the `select` command like so:
 
 ```bash
-Starlane exec "select *"
+starlane exec "select *"
 ```
 
 The output should look something like this:
@@ -154,14 +154,14 @@ Next we need to create some address segments which to some extent act like speci
 
 Create a Repo Base:
 ```bash
-Starlane exec "create localhost:repo<Base<Repo>>"
+starlane exec "create localhost:repo<Base<Repo>>"
 ```
 
 In this case we are creating a `Base` (which is kind of like a directory) -- it's just a resource for containing other resources.   Notice that base takes a Kind which is akin to a SubType.  The Kind is `Repo` which indicates that only resources of type ArtifactBundleSeries will be allowed in this Base.
 
 Now let's create an ArtifactBundleSeries:
 ```bash
-Starlane exec "create localhost:repo:tutorial<ArtifactBundleSeries>"
+starlane exec "create localhost:repo:tutorial<ArtifactBundleSeries>"
 ```
 
 An ArtifactBundleSeries will only accept a series of versioned ArtifactBundles.
@@ -171,7 +171,7 @@ An ArtifactBundleSeries will only accept a series of versioned ArtifactBundles.
 Finally we can now publish the `bundle.zip` we created with this command:
 
 ```bash
-Starlane exec "publish ^[ bundle.zip ]-> localhost:repo:tutorial:1.0.0"
+starlane exec "publish ^[ bundle.zip ]-> localhost:repo:tutorial:1.0.0"
 ```
 
 The `publish` command is a special variant of the `create` command which understands that we are creating an ArtifactBundle (which is why we don't need to explicitly include the Type after the address)
@@ -187,7 +187,7 @@ We now have everything in place to configure localhost's routing.
 Use this command to set the `bind` property of localhost:
 
 ```bash
-Starlane exec "set localhost{ +bind=localhost:repo:tutorial:1.0.0:/bind/localhost.bind }"
+starlane exec "set localhost{ +bind=localhost:repo:tutorial:1.0.0:/bind/localhost.bind }"
 ```
 
 This time the command is `set` and the address is `localhost`.  The curly brace scope indicates we are going to manipulate the resource properties.  `+bind` creates a new property called `bind` and sets its value to  `localhost:repo:tutorial:1.0.0:/bind/localhost.bind` which should make some sense to you at this point.  `localhost:repo:tutorial:1.0.0` is the ArtifactBundle we just published and you can see that the trailing portion of the address references the bind file we created inside the ArtifactBundle: `:/bind/localhost.bind`.
