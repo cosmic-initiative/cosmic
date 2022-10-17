@@ -1,8 +1,16 @@
 
 # DOCUMENTATION
 
-## TOPICS
+## VERSION 0.3.0
+The Following Documents reference the 0.3.0 release of The Cosmic Initiative framework of which Starlane is the reference project.  Although many of the aspects of 0.3.0 work well they are not integrated into Starlane yet (which is still at version 0.2.0.).
+
+There is still a [Tutorial available for version 0.2.0]({{< ref "/docs/tutorial" >}} "Tutorial"), however it is not consistent with the updates made in version 0.3.0.
+
+## TOPICS (0.3.0)
 It is recommended to start with Terms and follow the navigation through the rest of the docs:
+
+
+[Getting Started]({{< ref "/docs/getting-started" >}} "Getting Started")
 
 [Terms]({{< ref "/docs/terms" >}} "Terms")
 
@@ -18,17 +26,13 @@ It is recommended to start with Terms and follow the navigation through the rest
 
 [Docs]({{< ref "/docs/docs" >}} "Docs")
 
-[Install]({{< ref "/docs/install" >}} "Install")
+[Mechtron Installation]({{< ref "/docs/mech-install" >}} "Mechtron Installation")
 
 [Mechtrons & Apps]({{< ref "/docs/mechtrons-and-apps" >}} "Mechtrons & Apps")
 
 [Bind Routes & Pipelines]({{< ref "/docs/bind-routes" >}} "Bind Routes & Pipelines")
 
 
-## TUTORIAL (0.2.0)
->**NOTE**: this is a legacy tutorial for working with version 0.2.0 which will soon be obsolete. The remainder of the docs reference version 0.3.0 which has a very full API but has not been integrated into Starlane yet.
- 
-[Tutorial]({{< ref "/docs/tutorial" >}} "Tutorial").
 
 
 
