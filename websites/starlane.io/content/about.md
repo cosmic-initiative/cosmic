@@ -1,5 +1,5 @@
 # ABOUT STARLANE
-Starlane makes it easy to deploy and interoperate with secure WebAssembly code in the cloud, the edge, desktop, mobile and IoT environments.
+Starlane is a Mesh that is extensible via WebAssembly code for the cloud, the edge, desktop, mobile and IoT environments.
 
 ## A SERVER TO CLIENT MESH
 Starlane is a special type of Mesh that spans from the server to client.  This special Mesh facilitates the execution of WebAssembly at every level. To accomplish this feat Starlane provides the following :

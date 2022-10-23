@@ -2,15 +2,14 @@
 # DOCUMENTATION
 
 ## VERSION 0.3.0
-The Following Documents reference the 0.3.0 release of The Cosmic Initiative framework of which Starlane is the reference project.  Although many of the aspects of 0.3.0 work well they are not integrated into Starlane yet (which is still at version 0.2.0.).
-
-There is still a [Tutorial available for version 0.2.0]({{< ref "/docs/tutorial" >}} "Tutorial"), however it is not consistent with the updates made in version 0.3.0.
 
 ## TOPICS (0.3.0)
 It is recommended to start with Terms and follow the navigation through the rest of the docs:
 
 
 [Getting Started]({{< ref "/docs/getting-started" >}} "Getting Started")
+
+[Tutorial]({{< ref "/docs/tutorial" >}} "Tutorial")
 
 [Terms]({{< ref "/docs/terms" >}} "Terms")
 

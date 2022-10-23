@@ -6,10 +6,7 @@ draft: false
 
 # CONTACT
 
-Feel free to reach out and ask for help or any question you have about Starlane!
+You can email uberscott: scott@starlane.io
 
 If you need immediate help, try reaching out via the [Starlane Discord channel](https://discord.gg/S9y2uJVrq2 "Starlane Discord channel").
 
-Otherwise fill out this form to receive a response via traditional email:
-
-{{<contact-form>}}
